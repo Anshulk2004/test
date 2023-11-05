@@ -1,5 +1,5 @@
 const pg= require('pg');
-const config = {user:"postgres",password:"ashmit",database:"test",port:5433,host:"localhost"}
+const config = {user:"postgres",password:"postgres",database:"postgres"}
 const client = new pg.Client(config);
 client.connect().then(()=>{
     console.log('Connected');
